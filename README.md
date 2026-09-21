@@ -283,7 +283,7 @@ The alert was generated approximately 85 seconds after the underlying suspicious
 | Type | Value | Role |
 |---|---|---|
 | Endpoint | `Victim` | Windows endpoint where the controlled activity executed |
-| Endpoint IP | `192.168.56.105` | Host-only lab IP observed in endpoint telemetry |
+| Host-only Lab IP | `192.168.56.105` | Host-only lab IP observed in endpoint telemetry |
 | Windows Event ID | `4688` | New process creation |
 | Suspicious Process | `powershell.exe` | Process matched by the custom Sigma detection |
 | Suspicious PID | `1196` | Encoded PowerShell process under investigation |
