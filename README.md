@@ -383,4 +383,12 @@ The custom rule depends on process-creation telemetry containing both the proces
 
 ## What I Learned
 
-<!-- Write this section yourself. -->
+-I learned why a parent/child process relationships matter, a process tree can be followed to find out what the root cause was and the specific chain of events that followed.
+
+-I learned how Sigma rules work on a practical level, tested a custom rule and saw how the rule turned endpoint telemetry into alerts.
+
+-I learned how Windows Event ID 4688 helps with process investigations. I was able to see executable paths, parent/child processes. Very useful because this Event logs whenever a new process or program is created.
+
+-I learned how to pivot from an alert to a more in-depth investigation by using the process ID and parent processes information to hunt the related events and reconstruct the sequence of events.
+
+-I learned how correlation is stronger than a single alert, the alert showed something suspicious happened, with correlation I was able to find out specifically what the suspicious behavior was, where the observed activity originated and any subsequent activity that followed.
